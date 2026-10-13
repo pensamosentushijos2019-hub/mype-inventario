@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#142b29"><title>MypeInventario · Segundo avance</title><link rel="stylesheet" href="styles.css"><script defer src="app.js"></script></head>
+<body>
+<section id="login" class="login-shell">
+ <div class="login-story"><div class="brand">mype<span>inventario</span></div><div><p class="eyebrow">TU TIENDA, AL DÍA</p><h1>Menos cuentas.<br>Más control.</h1><p>Productos, stock y ventas en un solo lugar.<br>Hecho para el ritmo de tu negocio.</p></div><span class="story-footer">Boutique Lima · Demostración académica</span></div>
+ <div class="login-panel"><form id="login-form"><p class="eyebrow">BIENVENIDO</p><h2>Ingresa a tu tienda</h2><p class="muted">Continúa donde dejaste tu negocio.</p><label>Correo electrónico<input type="email" name="email" required autocomplete="username" value="admin@mype.pe"></label><label>Contraseña<input type="password" name="password" required autocomplete="current-password" value="Mype2026!"></label><p id="login-error" class="error" role="alert"></p><button class="primary full">Iniciar sesión</button><div class="demo-note">Acceso de demostración<br><b>admin@mype.pe</b> · <b>Mype2026!</b><br><small>Los datos se guardan en la base local del servidor.</small></div></form></div>
+</section>
+<div id="app" class="app-shell" hidden>
+ <aside class="sidebar"><a class="brand" href="#dashboard">mype<span>inventario</span></a><p class="sidebar-caption">ESPACIO DE TRABAJO</p><nav id="nav" aria-label="Principal"><button data-page="dashboard">◫ <span>Resumen</span></button><button data-page="inventario">▦ <span>Inventario</span></button><button data-page="movimientos">↕ <span>Movimientos</span></button><button data-page="ventas">＋ <span>Punto de venta</span></button><button data-page="historial">≡ <span>Historial de ventas</span></button><button data-page="alertas">◎ <span>Reabastecimiento</span></button></nav><div class="sidebar-bottom"><span class="avatar">BL</span><div><b id="negocio">Boutique Lima</b><small>Tienda de demostración</small></div></div></aside>
+ <div class="workspace"><header class="topbar"><span>Tu negocio / <b id="page-label">Resumen</b></span><button id="logout" class="quiet">Cerrar sesión</button></header><main id="content" tabindex="-1"></main><footer class="app-footer">MypeInventario · Segundo avance · Importes en soles (PEN)</footer></div>
+</div>
+<div id="toast" role="status" class="toast" hidden></div><dialog id="modal"><div class="modal-head"><h2 id="modal-title"></h2><button id="close-modal" aria-label="Cerrar" class="quiet">✕</button></div><div id="modal-body"></div></dialog>
+</body></html>
